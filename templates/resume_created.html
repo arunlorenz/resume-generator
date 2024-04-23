@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Created</title>
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    {% if filename %}
+    <p>Your resume has been created and uploaded successfully. You can download it here:</p>
+    <a href="/download_resume/{{ filename }}">{{ filename }}</a>
+    {% endif %}
+</body>
+</html>
